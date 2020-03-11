@@ -4,6 +4,7 @@ general {
         interval = 5
 }
 
+
 order += "disk /"
 order += "ethernet enp1s0"
 order += "load"
@@ -28,3 +29,4 @@ load {
 disk "/" {
         format = "%free"
 }
+
