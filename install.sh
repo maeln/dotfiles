@@ -1,14 +1,15 @@
 #!/bin/bash
 
 # just make sure the config directory exists
-mkdir -p $HOME/.config
-mkdir -p $HOME/.scripts
+mkdir -p $HOME/.config/.scripts
+mkdir -p $HOME/.bin
 
 # bunch of useful scripts
-cp -r ./scripts $HOME/.config/
+cp -r ./config/scripts $HOME/.config/
 
 # i3 configuration
 # need: i3 i3bar i3status i3lock pnmixer
-cp -r ./i3/* $HOME/.config/
+cp -r ./config/i3/* $HOME/.config/
 
-
+# Add bins
+cp -r ./bin $HOME/.bin
