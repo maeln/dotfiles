@@ -1,0 +1,5 @@
+[user]
+	name = Maël Naccache Tüfekçi
+	email = contact@maeln.com
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
