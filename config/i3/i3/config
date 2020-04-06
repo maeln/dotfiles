@@ -218,9 +218,12 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 
 # Xrandr for dual screen
 exec --no-startup-id ~/.config/scripts/xrandr.sh
-exec --no-startup-id pnmixer
 
 # Keyb layout
-exec --no-startup-id setxkbmap -layout us,us -variant intl,,
-exec --no-startup-id setxkbmap -option grp:alt_shift_toggle
-exec --no-startup-id setxkbmap -option compose:rctrl
+exec --no-startup-id ~/.config/scripts/keyb.sh
+
+# Network applet
+exec --no-startup-id nm-applet 
+
+# Sound applet
+exec --no-stratup-id pnmixer
